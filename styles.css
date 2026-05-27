@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  color: #241b18;
+  background:
+    linear-gradient(rgba(20, 16, 14, 0.28), rgba(20, 16, 14, 0.4)),
+    url("https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1600&q=80")
+      center / cover;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+}
+
+.book {
+  width: min(92vw, 520px);
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 48px 36px;
+  text-align: center;
+  background: #f4ead7;
+  border: 1px solid rgba(54, 36, 25, 0.24);
+  border-radius: 8px;
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 10px rgba(255, 255, 255, 0.22);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #6d5547;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.answer-panel {
+  width: 100%;
+  min-height: 150px;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  border-top: 1px solid rgba(82, 57, 40, 0.26);
+  border-bottom: 1px solid rgba(82, 57, 40, 0.26);
+}
+
+#answer {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.55;
+}
+
+button {
+  min-width: 180px;
+  min-height: 48px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 17px;
+  color: #fffaf2;
+  background: #6c3428;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(79, 38, 29, 0.24);
+}
+
+button:hover {
+  background: #7c4031;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.answer-pop {
+  animation: pop 260ms ease;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 520px) {
+  .app {
+    padding: 18px;
+  }
+
+  .book {
+    min-height: 520px;
+    padding: 36px 22px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  #answer {
+    font-size: 23px;
+  }
+}
