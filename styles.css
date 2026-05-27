@@ -108,7 +108,7 @@ button:active {
   body {
     background:
       linear-gradient(rgba(20, 16, 14, 0.15), rgba(20, 16, 14, 0.15)),
-      url("https://raw.githubusercontent.com/wrym003/answer-book/main/cat-mobile.jpg")
+      url("cat-mobile.jpg")
         center / cover no-repeat;
   }
 
