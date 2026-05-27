@@ -119,6 +119,9 @@ button:active {
   .book {
     min-height: 520px;
     padding: 36px 22px;
+    background: rgba(244, 234, 215, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
   }
 
   h1 {
