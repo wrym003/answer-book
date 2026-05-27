@@ -107,10 +107,9 @@ button:active {
 @media (max-width: 520px) {
   body {
     background:
-      linear-gradient(rgba(20, 16, 14, 0.22), rgba(20, 16, 14, 0.5)),
-      url("https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1600&q=80")
-        center top / contain no-repeat,
-      #2c2521;
+      linear-gradient(rgba(20, 16, 14, 0.15), rgba(20, 16, 14, 0.15)),
+      url("https://raw.githubusercontent.com/wrym003/answer-book/main/cat-mobile.jpg")
+        center / cover no-repeat fixed;
   }
 
   .app {
